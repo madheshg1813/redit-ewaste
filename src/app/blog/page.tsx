@@ -37,10 +37,17 @@ export default function BlogPage() {
                         {blogPosts.map((post) => (
                             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full">
                                 <div className="aspect-[16/10] bg-gray-200 relative overflow-hidden">
-                                    <div className="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500">
-                                        {/* Placeholder for image since we don't have real assets yet */}
-                                        <span className="text-sm font-medium">Image Placeholder</span>
-                                    </div>
+                                    {post.image ? (
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        />
+                                    ) : (
+                                        <div className="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500">
+                                            <span className="text-sm font-medium">No Image</span>
+                                        </div>
+                                    )}
                                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary uppercase tracking-wide">
                                         {post.category}
                                     </div>

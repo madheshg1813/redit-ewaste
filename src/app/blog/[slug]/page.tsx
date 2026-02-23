@@ -73,8 +73,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 {/* Content Area */}
                 <div className="max-w-4xl mx-auto px-4 md:px-8 py-16 -mt-10 relative z-20">
                     <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-gray-100">
+                        {post.image && (
+                            <div className="aspect-video mb-10 rounded-xl overflow-hidden shadow-lg border border-gray-50">
+                                <img
+                                    src={post.image}
+                                    alt={post.title}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        )}
                         <div
-                            className="prose prose-lg prose-green max-w-none text-gray-700"
+                            className="prose prose-lg prose-green max-w-none text-gray-700 font-sans"
                             dangerouslySetInnerHTML={{ __html: content }}
                         />
 
