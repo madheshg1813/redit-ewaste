@@ -39,7 +39,11 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
         }
 
         if (typeof data[field] !== 'undefined') {
-            items[field] = data[field];
+            if (field === 'date' && data[field] instanceof Date) {
+                items[field] = data[field].toISOString().split('T')[0];
+            } else {
+                items[field] = String(data[field]);
+            }
         }
     });
 
@@ -49,11 +53,11 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 export function getAllPosts(fields: string[] = []) {
     const slugs = getPostSlugs();
     const posts = slugs
-        .map((slug) => getPostBySlug(slug, fields))
-        // sort posts by date in descending order
-        .sort((post1, post2) => ((post1 && post2 && post1.date > post2.date) ? -1 : 1))
+        .map((slug: string) => getPostBySlug(slug, fields))
         // filter out nulls
-        .filter(post => post !== null);
+        .filter((post): post is { [key: string]: string } => post !== null)
+        // sort posts by date in descending order
+        .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
     return posts;
 }
 
