@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/img/blog"
+public_folder: "/img/blog"
+
+site_url: https://www.reditewasterecycling.com
+display_url: https://www.reditewasterecycling.com
+logo_url: https://www.reditewasterecycling.com/logo.png
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string", hint: "The URL of the post (e.g., my-new-post). Leave blank to auto-generate from title."}
+      - {label: "Meta Description", name: "meta_description", widget: "text", hint: "Short description for SEO (150-160 characters)"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Redit Team"}
+      - {label: "Category", name: "category", widget: "select", options: ["Environment", "Data Security", "Compliance", "Tips", "News"]}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}

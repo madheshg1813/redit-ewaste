@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Precise Design Colors */
+  --color-primary: #16A34A;
+  /* Tailwind green-600 */
+  --color-primary-hover: #15803D;
+  /* Tailwind green-700 */
+  --color-secondary: #DCFCE7;
+  /* Tailwind green-100 */
+  --color-bg-light: #F0FDF4;
+  /* Tailwind green-50 */
+  --color-top-bar: #064E3B;
+  /* Tailwind emerald-900 */
+  --color-text-title: #111827;
+  /* Tailwind gray-900 */
+  --color-text-body: #4B5563;
+  /* Tailwind gray-600 */
+  --color-border-light: #F3F4F6;
+  /* Tailwind gray-100 */
+
+  --font-sans: var(--font-inter);
+
+  --animate-bounce-slow: bounce 3s infinite;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --font-inter: Inter, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    /* FORCE LIGHT MODE as per design */
+    --foreground: #111827;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+}
