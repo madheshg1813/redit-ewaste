@@ -1,11 +1,16 @@
 ---
-title: "The Future of E-Waste Recycling: Trends and Innovations in 2026"
-date: "2026-02-24"
-author: "Redit Team"
-meta_description: "A deep-dive into the 2026 e-waste landscape, covering AI-driven sorting, hydrometallurgical recovery, and the global shift toward urban mining."
-category: "Technology"
-image: "/img/blog/future-tech.jpg"
-excerpt: "As technology evolves, so does the way we reclaim it. Explore the cutting-edge innovations transforming e-waste from a liability into a resource."
+title: "The Future of E-Waste Recycling: Trends and Innovations"
+slug: future-of-e-waste-recycling-trends-and-innovations
+meta_description: A deep-dive into the 2026 e-waste landscape, covering
+  AI-driven sorting, hydrometallurgical recovery, and the global shift toward
+  urban mining.
+date: 2026-02-24
+author: Redit Team
+category: News
+image: /img/blog/proper-e-waste-recycling.jpeg
+excerpt: As technology evolves, so does the way we reclaim it. Explore the
+  cutting-edge innovations transforming e-waste from a liability into a
+  resource.
 ---
 
 The landscape of electronic waste management is undergoing a massive transformation. As we move through 2026, the traditional "dump and forget" mentality is being replaced by sophisticated, technology-driven recovery systems. For businesses and individuals alike, understanding these trends is key to staying ahead of environmental regulations and participating in the global "Circular Economy."
