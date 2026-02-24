@@ -1,11 +1,15 @@
 ---
 title: "How to Dispose of Old LED TVs Safely and Responsibly: A Detailed Guide"
-date: "2026-02-24"
-author: "Redit Team"
-meta_description: "Learn the technical, legal, and environmental requirements for disposing of old LED and smart TVs. Protecting your data and the planet."
-category: "Guides"
-image: "/img/blog/led-tv-recycling.jpg"
-excerpt: "Upgrading your screens? Don't let your old television become an environmental hazard. Our comprehensive guide covers data security and ethical disposal."
+slug: how-to-dispose-of-old-led-tvs-safely-and-responsibly
+meta_description: Learn the technical, legal, and environmental requirements for
+  disposing of old LED and smart TVs. Protecting your data and the planet.
+date: 2026-02-24T09:31:00.000+05:30
+author: Redit Team
+category: Tips
+image: /img/blog/proper-e-waste-recycling.jpeg
+excerpt: Upgrading your screens? Don't let your old television become an
+  environmental hazard. Our comprehensive guide covers data security and ethical
+  disposal.
 ---
 
 With the rapid advancement in display technology—from 4K to 8K and OLED—households and offices are upgrading their screens more frequently than ever before. However, the disposal of an LED or Plasma television is a complex task. These devices are not just "big screens"; they are high-tech assemblies containing hazardous chemicals, personal data, and valuable circuitry.
