@@ -6,7 +6,7 @@ meta_description: Learn the technical, legal, and environmental requirements for
 date: 2026-02-24T09:31:00.000+05:30
 author: Redit Team
 category: Tips
-image: /img/blog/proper-e-waste-recycling.jpeg
+image: /img/blog/e-waste.png
 excerpt: Upgrading your screens? Don't let your old television become an
   environmental hazard. Our comprehensive guide covers data security and ethical
   disposal.
