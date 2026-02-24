@@ -33,8 +33,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         'category',
     ]);
 
+    // If post is not found, show 404
     if (!post) {
         notFound();
+        return null; // Return null to satisfy TS that the rest of the code won't run
     }
 
     const content = await markdownToHtml(post.content || '');

@@ -34,7 +34,7 @@ export default function BlogPage() {
             <section className="py-16 md:py-24 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {blogPosts.map((post) => (
+                        {blogPosts.map((post: { [key: string]: string }) => (
                             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full">
                                 <div className="aspect-[16/10] bg-gray-200 relative overflow-hidden">
                                     {post.image ? (

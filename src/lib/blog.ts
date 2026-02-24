@@ -33,12 +33,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     fields.forEach((field) => {
         if (field === 'slug') {
             items[field] = realSlug;
-        }
-        if (field === 'content') {
+        } else if (field === 'content') {
             items[field] = content;
-        }
-
-        if (typeof data[field] !== 'undefined') {
+        } else if (data[field] !== undefined) {
+            // Handle date conversion
             if (field === 'date' && data[field] instanceof Date) {
                 items[field] = data[field].toISOString().split('T')[0];
             } else {
